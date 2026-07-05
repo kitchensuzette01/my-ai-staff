@@ -63,8 +63,3 @@ export interface WeeklyPlan {
   days: DaySlot[];
   aiEnabled: boolean;
 }
-
-export interface StoredState {
-  version: 1;
-  plan: WeeklyPlan | null;
-}
