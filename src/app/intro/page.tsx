@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const GOOGLE_FORM_URL = 'https://forms.gle/REPLACE_WITH_REAL_FORM_URL';
+const PAYMENT_URL = 'https://www.groble.im/payment/npLPJA';
 const SITE_URL = 'https://my-ai-staff.vercel.app';
 
 const TITLE = 'SNS 콘텐츠 플래너 — 주제와 링크만 넣으면 요일별 콘텐츠 캘린더 완성';
@@ -44,12 +44,12 @@ function Hero() {
           무료로 지금 써보기
         </Link>
         <a
-          href={GOOGLE_FORM_URL}
+          href={PAYMENT_URL}
           target="_blank"
           rel="noopener noreferrer"
           className={SECONDARY_CTA_CLASS}
         >
-          베타 소식 받기
+          지금 구매하기
         </a>
       </div>
     </section>
@@ -135,20 +135,20 @@ function RepeatCta() {
   );
 }
 
-function LeadCapture() {
+function PurchaseCta() {
   return (
     <section className="mx-auto max-w-3xl space-y-4 px-6 py-12 text-center">
-      <h2 className="text-xl font-bold">아직 써볼 준비가 안 되셨나요?</h2>
+      <h2 className="text-xl font-bold">제대로 써보고 싶으신가요?</h2>
       <p className="text-gray-500">
-        베타 업데이트와 정식 오픈 소식을 가장 먼저 알려드릴게요.
+        정식 버전을 구매하면 계속해서 편하게 이용하실 수 있어요.
       </p>
       <a
-        href={GOOGLE_FORM_URL}
+        href={PAYMENT_URL}
         target="_blank"
         rel="noopener noreferrer"
         className={SECONDARY_CTA_CLASS}
       >
-        관심 등록하기
+        지금 구매하기
       </a>
     </section>
   );
@@ -162,12 +162,12 @@ function Footer() {
           앱 체험하기
         </Link>
         <a
-          href={GOOGLE_FORM_URL}
+          href={PAYMENT_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600"
         >
-          문의·베타 신청
+          구매하기
         </a>
       </div>
       <p>© 2026 SNS 콘텐츠 플래너</p>
@@ -183,7 +183,7 @@ export default function IntroPage() {
       <HowItWorks />
       <ScreenshotPreview />
       <RepeatCta />
-      <LeadCapture />
+      <PurchaseCta />
       <Footer />
     </main>
   );
